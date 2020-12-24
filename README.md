@@ -4,17 +4,17 @@ CS50’s Introduction to Artificial Intelligence with Python : <a href="https://
 
 Download the distribution code from <a href="https://cdn.cs50.net/ai/2020/x/projects/0/degrees.zip">here</a> and unzip it.
 
-**Background of the Project**
+# Background of the Project
 
 According to the <a href="https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon">Six Degrees of Kevin Bacon game</a>, anyone in the Hollywood film industry can be connected to Kevin Bacon within six steps, where each step consists of finding a film that two actors both starred in.
 
 In this problem, we’re interested in finding the shortest path between any two actors by choosing a sequence of movies that connects them. For example, the shortest path between Jennifer Lawrence and Tom Hanks is 2: Jennifer Lawrence is connected to Kevin Bacon by both starring in “X-Men: First Class,” and Kevin Bacon is connected to Tom Hanks by both starring in “Apollo 13.”
 
-#Problem Statement
+# Problem Statement
 
 Our states are people. Our actions are movies, which take us from one actor to another (it’s true that a movie could take us to multiple different actors, but that’s okay for this problem). Our initial state and goal state are defined by the two people we’re trying to connect. By using breadth-first search, we can find the shortest path from one actor to another.
 
-#Specification
+# Specification
 
 Complete the implementation of the shortest_path function such that it returns the shortest path from the person with id source to the person with the id target.
 
